@@ -3,20 +3,13 @@
 #include <cstdlib>
 #include <ctime>
 #include <vector>
+#include "Pvariables.h"
 
 int getRandomNumber(int min, int max);
 
 int main()
 {
     std::srand(std::time(nullptr));
-
-
-    std::vector<int> hscore = { 0 };
-    int hscorecounter = 0;
-    int maxnumber = 5;
-    int minnumber = 1;
-    char difficulty = 1;
-    bool repeat = false;
 
     std::cout << "Choose difficulty: \n 1 for easy, 2 for medium, 3 for hard, 4 to choose yourself: ";
     std::cin >> difficulty;
