@@ -5,7 +5,6 @@
 #include <vector>
 #include "Pvariables.h"
 
-int getRandomNumber(int min, int max);
 
 int main()
 {
@@ -124,11 +123,5 @@ int main()
     for (int i = 0; i < sortingvector.size(); i++) {
         std::cout << sortingvector.at(i) << "\n";
     }
-}
-
-int getRandomNumber(int min, int max) //code in this function is from https://www.learncpp.com/cpp-tutorial/59-random-number-generation/
-{
-    static constexpr double fraction{ 1.0 / (RAND_MAX + 1.0) };
-    return min + static_cast<int>((max - min + 1) * (std::rand() * fraction));
 }
 
